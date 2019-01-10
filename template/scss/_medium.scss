@@ -1,0 +1,113 @@
+/* CSS Document */
+
+
+
+
+@media only screen and (min-width: 560px) {
+	
+	header {
+	
+	
+	}
+	
+	
+	/* NAV STYLING */
+	nav {
+	
+}
+
+	
+	/* MAIN STYLING */
+	main {
+	
+
+		.feature1 {
+			grid-row: 1;
+			grid-column: 1 / span 2;
+		}
+		.feature2 {
+			grid-row: 1;
+			grid-column: 3 / span 2;
+		}
+		.feature3 {
+			grid-row: 2;
+			grid-column: 1 / span 2;
+		}
+		.feature4 {
+			grid-row: 2;
+			grid-column: 3 / span 2;
+		}
+	
+		div.aboutUs {
+			p{
+				font-size: 13;
+			}
+		
+		}
+		
+		
+		div.botSect {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-column-gap: 10px;
+				grid-row-gap: 10px;
+		}
+		
+	.feature5 {
+		grid-row: 1;
+		grid-column: 1;
+	}
+	
+	.feature6 {
+		grid-row: 1;
+		grid-column: 2;
+	}
+	
+	.feature7 {
+		
+		grid-row: 2;
+		grid-column: 2;
+		
+
+	}
+		
+			
+		.feature9 {
+			
+			grid-row: 3;
+			grid-column: 2;
+			
+		
+			button{
+			
+			font-family: $mainFont;
+			font-size: 22px;
+			padding: .4em 1.5em;
+			border-radius: 30px;
+			
+			color: white;
+			@include gradient($primaryColor, darken($primaryColor, 10%));
+		}
+		
+		p {
+			font-size: 13px;
+		
+		}
+		}
+	
+	.feature8 {
+		grid-row: 2;
+		grid-column: 1;
+	}
+		
+	}
+		
+} //end main
+	
+
+	footer {
+		
+	
+	
+}
+
