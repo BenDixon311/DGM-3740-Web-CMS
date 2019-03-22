@@ -9,7 +9,17 @@
 <meta charset="utf-8">
 <title>Blue River Studios</title>
 	<link href = "css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	
 
 
 </head>
@@ -18,14 +28,17 @@
 	
 	
 	<!-- PAGE HEADER -->
+	
 	<header>
-		<div class="header-left">
-	<img src="images/logo.png" alt="Blue River Studios Logo">
 		
-		<div class="wrapper">
-		<h1>BlueRiver</h1>
-		<h2>STUDIOS</h2>
-		</div>
+	
+		
+		<div class="header-left">
+			<br>
+			
+	<img src="images/logo.png" srcset = "images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x" alt="Cabot Cruises Logo">
+		
+		
 		</div>
 		
 		
@@ -36,54 +49,65 @@
 	</header>
 	
 	<!-- PAGE NAV -->
-	<nav class = "clearfix">
-		
-	<ul>
-		<li><a href="#">HOME</a></li>
-		<li><a href="#">CRUISES</a></li>
-		<li class="dropdown"><a href="javascript:void(0)" class = "dropbtn">AGENTS</a>
-			<div class = "dropdown-content">
-				<a href="#">Julia Stevens</a>
-				<a href="#">Steve Jobs</a>
-			</div>
-		</li>
-		<li><a href="#">BOOK</a></li>
-		<li class="search"><input type="search"><button class="fas fa-search"></button></li>
-	</ul>	
-		
-		
-	
-	</nav>
+	 
+	<div class="navwrap">
+    <div class="topnav" id="myTopnav">
+       <a href="#" class="active">HOME</a>
+       <a href="#">CRUISES</a>
+       <a href="#">BOOK</a>
+       <div class="dropdown">
+          <button class="dropbtn">AGENTS
+             &nbsp;	&darr;
+          </button>
+          <div class="dropdown-content">
+             <a href="#">Julia Stevens</a>
+             <a href="#">Steve Jobs</a>
+          </div>
+       </div>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+       </a>
+      <div class="search">
+          <input type="search" name="search" id="search" placeholder="Search...">
+          <button class="mySearch"><i class="fas fa-search fa-2x"></i></button>
+       </div>
+    </div>
+ </div>
 		
 	<!-- MAIN CONTENT -->
 	<main>
-		<div class="bannerimg">
-	 	<img src="images/Banner.jpg" alt="Banner">
-		</div>
-		<div class="strip">
-			<div class="stripContent">
-			
-			
-			<figure class="figure1">
-				<h1>EXPECT THE BEST</h1>	
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor rhoncus est sed lobortis. Nam aliquam nisi magna, nec accumsan metus euismod vel. Praesent at vestibulum nibh, eu tristique risus.</p>
+		<div class = "slider">
+		
+			<picture>
+				<source srcset="images/slider1mobile.jpg" media="(max-width:600px)">
+				<source srcset="images/slider1.jpg">
+				<img srcset="images/slider1.jpg" alt="slider image">
+			</picture>
 
-				<ul>
-					<li>Mobile First Design</li>
-					<li>Masterful Graphics</li>
-					<li>Modern Designs</li>
-					<li>Marketing</li>
-				</ul>
-			</figure>
+			<picture>
+				<source srcset="images/slider2mobile.jpg" media="(max-width:600px)">
+				<source srcset="images/slider2.jpg">
+				<img srcset="images/slider2.jpg" alt="slider image">
+			</picture>
 
-				<figure class="figure2">
-				<h2>OUR FORMULA</h2>
-					<p>development + deployment + design</p>
-				<h1 class="italic">SUCCESS</h1>
-				</figure>
-				
-				</div><!-- END stripContent-->
+			<picture>
+				<source srcset="images/slider3mobile.jpg" media="(max-width:600px)">
+				<source srcset="images/slider3.jpg">
+				<img srcset="images/slider3.jpg" alt="slider image">
+			</picture>
+
+			<picture>
+				<source srcset="images/slider3mobile.jpg" media="(max-width:600px)">
+				<source srcset="images/slider3.jpg">
+				<img srcset="images/slider3.jpg" alt="slider image">
+			</picture>
+
 		</div>
+		
+		
+		
+		
+
 		
 		<div class="divider">
 		<h1>MORE ABOUT US</h1>
@@ -92,104 +116,121 @@
 		<div class="aboutUs">
 			
 		<figure class="feature1">
-		 <img src ="images/aboutus1.png" alt="About Us">
-			<h2>Our Persistance</h2>
-			<p>Sed, cursus, in nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et vel, nunc? Proin quis tincidunt scelerisque porttitor? Dapibus. Ultricies! Velit magna urna. Porta quis odio natoque arcu pulvinar aenean, ut pellentesque! Nec proin montes! Pid elit lacus.sagittis dignissim vut.</p>
+		 <div class="featureDesc">
+			<h2>Pets Allowed</h2>
+		</div>
+		<div class="date">
+			<time datetime="2018-05-10 20:00">May 10, 2018</time>
+		</div>
 		</figure>
-		
+
 		<figure class="feature2">
-		 <img src ="images/aboutus2.png" alt="About Us">
-			<h2>Our Process</h2>
-			<p>In nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et vel, nunc? Proin quis tincidunt scelerisque porttitor? Dapibus. Ultricies! Velit magna urna. Porta quis odio natoque arcu pulvinar aenean, ut pellentesque! Nec proin montes! Pid elit lacus. Amet non facilisis massa.</p>
-		</figure>
-		
-		<figure class="feature3">
-		 <img src ="images/aboutus3.png" alt="About Us">
-			<h2>Our People</h2>
-			<p>Adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, montes magna. Augue et pulvinar proin dapibus! Urna nec, pid purus, augue velit. Nunc, eu lorem et! Augue hac, diam phasellus, augue turpis velit, ac? Augue sagittis dignissim vut.</p>
-		</figure>
-		
-		<figure class="feature4">
-		 <img src ="images/aboutus4.png" alt="About Us">
-				<h2>Our Payoff</h2>
-			<p>Elit! Sed, cursus, in nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et vel, nunc? Proin quis tincidunt scelerisque porttitor? Dapibus! Urna nec, pid purus, augue velit. Nunc, eu lorem et! Augue hac, diam phasellus, augue turpis velit, ac? Augue sagittis dignissim vut.</p>	
-		</figure>
+			<div class="featureDesc">
+			 <h2>Free Food</h2>
+		 </div>
+		 <div class="date">
+			 <time datetime="2018-05-10 20:00">May 10, 2018</time>
+		 </div>
+		 </figure>
+
+		 <figure class="feature3">
+			<div class="featureDesc">
+			 <h2>Lots of Gambling</h2>
+		 </div>
+		 <div class="date">
+			 <time datetime="2018-05-10 20:00">May 10, 2018</time>
+		 </div>
+		 </figure>
+
+		 <figure class="feature4">
+			<div class="featureDesc">
+			 <h2>Personal Cabins</h2>
+		 </div>
+		 <div class="date">
+			 <time datetime="2018-05-10 20:00">May 10, 2018</time>
+		 </div>
+		 </figure>
 		
 		</div><!-- end aboutUs -->
 		
 		<br>
 		<hr />
 		
-		<div class="botSect">
-		<figure class="feature5">
-			<img src="images/wide1.jpg" alt="Infrastructure">
-			<h2>Infrastructure</h2>
-			<p>Urna pid? Cras, eros risus mattis ridiculus tortor eu rhoncus porta lundium rhoncus massa porttitor, amet diam sociis dictumst elementum mid pulvinar. Lectus odio, nec turpis, et sagittis amet amet!</p>
-			
-		</figure>
-			
-		<figure class="feature6">
-			<img src="images/wide2.jpg" alt="Technology">
-			<h2>Technology</h2>
-			<p>elementum mid pulvinar. Lectus odio, nec turpis, et sagittis amet amet Urna pid? Cras, eros risus mattis ridiculus tortor eu rhoncus porta lundium rhoncus massa porttitor, amet diam sociis dictumst !</p>
-			
-		</figure>
 		
-			
-		<figure class="feature7">
-			<img src="images/graph.jpg" alt="Graph">
-			
-			
-		</figure>
-			
-			<figure class="feature9">
-				<button>SEE PRICING</button>
-				<p>Company Growth 2012-2016</p>
-			</figure>
-			
-			<figure class="feature8">
-			<h2>Live 24/7 Technical Support</h2>
-			<p>placerat dignissim lorem eu duis, quis aenean! Sagittis ridiculus aenean cras eu a, augue, sed sed rhoncus dictumst a? Scelerisque. Dapibus in etiam, natoque porta nunc in. Hac duis, et et, tincidunt lorem et. Amet sed aliquam egestas etiam, nec. Aliquet, quis enim, quis, in odio rhoncus, parturient pid risus nunc, lundium dapibus odio. Aenean eu pid sociis risus! Pellentesque montes elementum eros! Integer magna.</p>
-			</figure>
-		
-		</div>
-		
-		
-		
-		<div class="clients">
-			
-			<ul>
-				<li><a href="#"><img src="images/Layer 8.jpg" alt="CVSHealth"></a></li>
-				<li><a href="#"><img src="images/Layer 9.jpg" alt="Walmart"></a></li>
-				<li><a href="#"><img src="images/Layer 10.jpg" alt="McKesson"></a></li>
-				<li><a href="#"><img src="images/Layer 11.jpg" alt="Exxon Mobil"></a></li>
-				<li><a href="#"><img src="images/Layer 12.jpg" alt="Berkshire Hathaway"></a></li>
-				<li><a href="#"><img src="images/Layer 13.jpg" alt="Ford"></a></li>
-			
-			</ul>
-		
-		</div>
 		
 	</main>
 	
 	
 	<!-- PAGE FOOTER -->
-	<footer class="clearfix">
-		
-		
-		<div class="bodySect">
-			<p>Call at 1-800-555-1234</p>
+	<footer>
+		<div class="info">
+				<div class="contact">
+						<h2>Contact Us</h2>
+						<div class="address">
+						<h3>Cabot Cruises</h3>
+						<address>
+							<a href="https://www.google.com/maps/place/American+Cruise+Lines/@40.5730684,-111.8974766,17z/data=!3m1!4b1!4m5!3m4!1s0x875287d0c186821d:0x5cf3b875483d8c03!8m2!3d40.5730684!4d-111.8952879">150 Civic Center Dr, Sandy, UT 84070</a>
+						</address>
+						<br>
+						<h3>Phone:</h3>
+						<a href="tel:18665771000">1-866-577-1000</a>
+						<br><br>
+						<h3>Hours of Operation:</h3>
+						<p>Monday - Friday | 9am - 4pm</p>
+						</div>
+				</div>
+				<div class="newsletter">
+						<h2>Newsletter</h2>
+						<p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials.</p>
+						<input type="text"><br>
+						<button class="custom">Subscribe</button>
+				</div>
+				<div class="cruiseInfo">
+						<h2>Why Cabot Cruises</h2>
+						<p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you with all inclusive vacations including discounted cruises.</p>
+						<br>
+						<p>We do not sell travel to residents of Hawaii and Florida because those states already live in paradise. If you are a resident of one of these states, call your congressman and tell them to change the regulations.</p></div>
 		</div>
-	
+		<div class="social">
+				<div class="icons">
+								<a href="#"><i class="fab fa-facebook-square pad"></i></a>
+								<a href="#"></a><i class="fab fa-instagram pad"></i></a>
+								<a href="#"></a><i class="fab fa-twitter-square pad"></i></a>
+								<a href="#"></a><i class="fab fa-youtube-square pad"></i></a>
+								<a href="#"></a><i class="fab fa-pinterest-square pad"></i></a>
 
-	
-	
-	</footer>
+				</div>
+		</div>
+		<div class="copyright">
+						&#169; 2019 Ben Dixon 
+		</div>
+</footer>
 	
 	
 	
 	
 <script src="js/menuToggle.js"></script>
+	
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider').slick({
+    dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+  });
+});
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
 	
 
 
