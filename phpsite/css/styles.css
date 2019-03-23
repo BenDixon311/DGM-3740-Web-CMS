@@ -1,0 +1,642 @@
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CSS Document */
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLTStd-Roman.otf); }
+/* CSS Document */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  max-width: 100%; }
+
+/* HEADER STYLING */
+header {
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 100%;
+  background-color: antiquewhite;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  header .header-left {
+    margin: 0 auto;
+    max-width: 1200px; }
+  header .header-right {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 24px; }
+  header .wrapper {
+    position: absolute;
+    margin-left: 63px;
+    bottom: 0; }
+  header h1 {
+    font-family: "Avira", sans-serif;
+    font-size: 36.9px;
+    color: #0480b1; }
+  header h2 {
+    font-family: "Avira", sans-serif;
+    font-size: 16px;
+    letter-spacing: 14.5px;
+    color: #a8a8b2; }
+
+/* NAVIGATION STYLING */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; }
+  nav li {
+    float: left; }
+  nav li a, nav .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  nav li a:hover, nav .dropdown:hover .dropbtn {
+    background-color: red; }
+  nav li.dropdown {
+    display: inline-block; }
+  nav li.search {
+    float: right; }
+  nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  nav .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+  nav .dropdown:hover .dropdown-content {
+    display: block; }
+
+/* MAIN CONTENT STYLING */
+main {
+  margin: 0 auto; }
+  main img {
+    max-width: 100%;
+    margin: auto; }
+  main .bannerimg {
+    max-width: 1200px;
+    margin: auto; }
+  main div.divider {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em; }
+    main div.divider h1 {
+      font-family: "Avira", sans-serif;
+      font-size: 32px;
+      color: #0480b1;
+      margin-top: 2em; }
+  main div.strip {
+    max-width: 100%;
+    background-color: black;
+    margin-top: 10px; }
+    main div.strip div.stripContent {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      max-width: 1200px;
+      margin: 0 auto; }
+      main div.strip div.stripContent .figure1 {
+        grid-row: 1;
+        grid-column: 1 / span 3;
+        margin: 1rem 2%; }
+        main div.strip div.stripContent .figure1 h1 {
+          color: #fdd831;
+          font-size: 26px;
+          margin-bottom: .5rem; }
+        main div.strip div.stripContent .figure1 p {
+          font-style: italic;
+          color: white;
+          margin-bottom: 1rem; }
+        main div.strip div.stripContent .figure1 ul {
+          list-style-type: circle;
+          margin-left: 3em; }
+        main div.strip div.stripContent .figure1 ul li {
+          color: white; }
+      main div.strip div.stripContent .figure2 {
+        grid-row: 1;
+        grid-column: 4;
+        text-align: right;
+        margin: 0 2%; }
+        main div.strip div.stripContent .figure2 h2 {
+          color: #fdd831;
+          font-size: 26px;
+          margin: 1rem 2%; }
+        main div.strip div.stripContent .figure2 h1 {
+          font-size: 36px;
+          color: #fdd831;
+          font-style: italic;
+          margin-top: .5rem; }
+        main div.strip div.stripContent .figure2 p {
+          color: white; }
+  main div.aboutUs {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+    main div.aboutUs img {
+      width: 100%;
+      padding-bottom: 1em; }
+    main div.aboutUs h2 {
+      margin-left: 2%;
+      margin-right: 2%;
+      font-size: 26px;
+      font-family: "Avira", sans-serif;
+      color: white;
+      margin-bottom: .4em; }
+    main div.aboutUs p {
+      margin-left: 2%;
+      margin-right: 2%;
+      font-family: "Avira", sans-serif;
+      font-size: 18px;
+      color: #8d8d9a; }
+  main .feature1 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    background-image: url("../images/cruiseship1.jpg");
+    background-size: cover;
+    opacity: .75;
+    position: relative;
+    height: 250px; }
+    main .feature1 div.featureDesc {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 12px;
+      margin-top: 0;
+      position: relative;
+      top: 0; }
+      main .feature1 div.featureDesc h2 {
+        font-size: 160%;
+        font-weight: 700;
+        text-align: center; }
+    main .feature1 div.date {
+      background-color: rgba(0, 91, 151, 0.7);
+      color: white;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center; }
+  main .feature1:hover {
+    opacity: 1; }
+  main .feature2 {
+    grid-row: 1;
+    grid-column: 3 / span 2;
+    background-image: url("../images/cruiseship2.jpg");
+    background-size: cover;
+    opacity: .75;
+    position: relative;
+    height: 250px; }
+    main .feature2 div.featureDesc {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 12px;
+      margin-top: 0;
+      position: relative;
+      top: 0; }
+      main .feature2 div.featureDesc h2 {
+        font-size: 160%;
+        font-weight: 700;
+        text-align: center; }
+    main .feature2 div.date {
+      background-color: rgba(0, 91, 151, 0.7);
+      color: white;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center; }
+  main .feature2:hover {
+    opacity: 1; }
+  main .feature3 {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    background-image: url("../images/cruiseship3.jpg");
+    background-size: cover;
+    opacity: .75;
+    position: relative;
+    height: 250px; }
+    main .feature3 div.featureDesc {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 12px;
+      margin-top: 0;
+      position: relative;
+      top: 0; }
+      main .feature3 div.featureDesc h2 {
+        font-size: 160%;
+        font-weight: 700;
+        text-align: center; }
+    main .feature3 div.date {
+      background-color: rgba(0, 91, 151, 0.7);
+      color: white;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center; }
+  main .feature3:hover {
+    opacity: 1; }
+  main .feature4 {
+    grid-row: 2;
+    grid-column: 3 / span 2;
+    background-image: url("../images/cruiseship4.jpg");
+    background-size: cover;
+    opacity: .75;
+    position: relative;
+    height: 250px; }
+    main .feature4 div.featureDesc {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 12px;
+      margin-top: 0;
+      position: relative;
+      top: 0; }
+      main .feature4 div.featureDesc h2 {
+        font-size: 160%;
+        font-weight: 700;
+        text-align: center; }
+    main .feature4 div.date {
+      background-color: rgba(0, 91, 151, 0.7);
+      color: white;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center; }
+  main .feature4:hover {
+    opacity: 1; }
+
+/*end main*/
+/* FOOTER STYLING */
+footer {
+  background: antiquewhite;
+  /* fallback for old browsers */ }
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "contact" "newsletter" "cruiseInfo";
+  grid-column-gap: 10px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin: 0 3% 6% 3%; }
+  .info h2 {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 135%;
+    font-weight: 600; }
+  .info .contact {
+    margin-bottom: 3%;
+    grid-area: contact; }
+    .info .contact a {
+      text-decoration: none;
+      color: black; }
+    .info .contact a:hover, .info .contact a:active {
+      color: #005b97; }
+  .info .newsletter {
+    grid-area: newsletter;
+    margin-bottom: 3%;
+    margin-right: 2%; }
+    .info .newsletter input {
+      width: 97%;
+      padding: 3% 1%;
+      border-radius: 5px;
+      margin-top: 4%; }
+    .info .newsletter button.custom {
+      width: 100%;
+      padding: 3% 1%;
+      margin-top: 2%;
+      border-radius: 5px;
+      font-size: 110%;
+      background-color: #c62957; }
+    .info .newsletter button.custom:hover, .info .newsletter button.custom:active {
+      background-color: #137493; }
+  .info .cruiseInfo {
+    grid-area: cruiseInfo; }
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+  font-size: 120%; }
+  .social .icons {
+    color: white;
+    font-size: 200%; }
+  .social .pad {
+    color: #C8C8C8;
+    padding-right: 10px; }
+  .social .pad:hover {
+    color: #484848; }
+  .social .clearfix {
+    overflow: auto; }
+
+.copyright {
+  padding: 5%;
+  text-align: center;
+  background-color: #c62957;
+  color: #cce6ff;
+  font-size: 95%; }
+  .copyright a {
+    text-decoration: none;
+    color: #cce6ff; }
+  .copyright a:hover {
+    color: #A9A9A9; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* CSS Document */
+@media only screen and (min-width: 560px) {
+  /* NAV STYLING */
+  /* MAIN STYLING */
+  main div.aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  main .feature1 {
+    grid-row: 1;
+    grid-column: 1 / span 1; }
+  main .feature2 {
+    grid-row: 1;
+    grid-column: 2 / span 1; }
+  main .feature3 {
+    grid-row: 1;
+    grid-column: 3 / span 1; }
+  main .feature4 {
+    grid-row: 2;
+    grid-column: 1 / span 1; }
+  main div.aboutUs p {
+    font-size: 13; }
+
+  .info {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contact newsletter" "cruiseInfo cruiseInfo";
+    grid-column-gap: 20px;
+    margin: 0 3% 6%; }
+
+  .copyright {
+    padding: 1.5%; } }
+/* CSS Document */
+@media only screen and (min-width: 1024px) {
+  body h1 {
+    margin-left: 0; }
+
+  main div.aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+    main div.aboutUs p {
+      font-size: 13px; }
+  main .feature1 {
+    grid-row: 1;
+    grid-column: 1; }
+  main .feature2 {
+    grid-row: 1;
+    grid-column: 2; }
+  main .feature3 {
+    grid-row: 1;
+    grid-column: 3; }
+  main .feature4 {
+    grid-row: 1;
+    grid-column: 4; }
+
+  .info {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "contact newsletter cruiseInfo";
+    grid-column-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2%; } }
+.topnav {
+  overflow: hidden;
+  background-color: #c62957; }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 90%; }
+
+.active {
+  background-color: #137493;
+  color: white !important; }
+
+.topnav .icon {
+  display: none; }
+
+.dropdown {
+  float: left;
+  overflow: hidden; }
+
+.dropdown .dropbtn {
+  font-size: 90%;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 16px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  float: none;
+  color: #282828;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; }
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #C8C8C8;
+  color: #282828; }
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #282828; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.search {
+  margin-top: 8px;
+  float: right; }
+
+input {
+  padding: 9px; }
+
+#search {
+  border: 1px solid #ccc;
+  padding: 11px 9px 6px 9px;
+  width: 150px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease; }
+
+#search:focus {
+  width: 300px; }
+
+.mySearch {
+  padding: 3px 5px 5px 3px;
+  margin-left: -5px;
+  background-color: #C8C8C8;
+  color: #484848; }
+
+textarea, select, input, button {
+  outline: none; }
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none; }
+
+  .topnav a.icon {
+    float: left;
+    display: block; }
+
+  input {
+    padding: 9px; }
+
+  .search {
+    margin-bottom: 8px;
+    margin-right: 10%; }
+
+  #search {
+    padding: 10px 0px 7px 9px;
+    border: 1px solid #ccc;
+    border-radius: unset;
+    width: 13rem;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease; }
+
+  #search:focus {
+    width: 16rem; }
+
+  .mySearch {
+    margin-left: -5px;
+    padding: 3px 5px 6px 3px;
+    background-color: #C8C8C8;
+    color: #484848;
+    margin-right: 10px; } }
+@media screen and (max-width: 600px) {
+  .search-container {
+    display: none; }
+
+  .topnav a {
+    display: none; }
+
+  .topnav.responsive {
+    position: relative; }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-right: 25px; }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center; }
+
+  .topnav.responsive .dropdown {
+    float: none; }
+
+  .topnav.responsive .dropdown-content {
+    position: relative; }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */

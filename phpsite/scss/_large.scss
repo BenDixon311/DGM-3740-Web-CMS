@@ -1,0 +1,75 @@
+/* CSS Document */
+
+@media only screen and (min-width: 1024px) {
+	
+	body {
+		h1 {
+		margin-left: 0;
+	}
+	}
+	
+	header {
+	
+		
+	} // end header styling
+		
+	nav {
+	
+		
+	} //end nav styling
+	
+	
+	main {
+		
+		div.aboutUs {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-column-gap: 10px;
+				grid-row-gap: 10px;
+			
+			p{
+				font-size: 13px;
+			}
+			}
+
+			.feature1 {
+				grid-row: 1;
+				grid-column: 1;
+			}
+			.feature2 {
+				grid-row: 1;
+				grid-column: 2;
+			}
+			.feature3 {
+				grid-row: 1;
+				grid-column: 3;
+			}
+			.feature4 {
+				grid-row: 1;
+				grid-column: 4;
+			}
+		
+		
+
+
+	
+
+	}//end main
+	
+	
+	
+		.info {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas: 
+				"contact newsletter cruiseInfo";
+				grid-column-gap: 20px;
+				max-width: 1200px;
+				margin: 0 auto;
+				margin-bottom: 2%;
+		  }
+		
+	
+
+}
+	
+
