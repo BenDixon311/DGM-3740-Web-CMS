@@ -543,3 +543,19 @@ footer {
 	clear: both;
 }
 
+
+.cruiseList {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	
+	.img {
+		margin: auto;
+		width: 100%;
+		grid-area: 1 / span 1;
+	}
+	
+	.cruiseDesc {
+		grid-area: 1 / span 1;
+	}
+}
