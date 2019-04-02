@@ -51,7 +51,26 @@
 		
 		}
 		
-		
+		div.cruise{
+		display: grid;
+	
+			div.cruiseList {
+			
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto;
+
+				img.cruiseImg {
+					margin: auto;
+					width: 100%;
+					grid-area: 1 / span 1;
+				}
+
+				figure.cruiseDesc {
+					grid-area: 1 / span 2;
+				}
+			}
+
+		}
 
 		
 	}
@@ -68,6 +87,10 @@
 	.copyright {
 		padding:1.5%;
 	}	
+	
+
+
+	
 } //end main
 	
 
