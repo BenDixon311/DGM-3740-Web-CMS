@@ -4,6 +4,7 @@
 ?>
 
 <div class="cruise">
+	<br><br><br>
 	<h1>Cruises</h1>
 	
 	<div class = "cruiseList">

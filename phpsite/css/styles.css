@@ -337,6 +337,9 @@ main {
       text-align: center; }
   main .feature4:hover {
     opacity: 1; }
+  main div.cruise h1 {
+    font-size: 36px;
+    font-weight: bold; }
   main div.cruise div.cruiseList {
     display: grid;
     grid-template-columns: 1fr;
@@ -368,6 +371,80 @@ main {
         color: white;
         border: none;
         background-color: #c62957; }
+  main div.agent {
+    padding-left: 2%;
+    padding-top: 2%; }
+    main div.agent .agentTitle h1 {
+      font-size: 36px;
+      font-weight: bold;
+      padding-bottom: 2%; }
+    main div.agent .agentImage figure img {
+      width: 100%;
+      margin: 0 auto; }
+    main div.agent .agentImage figure figcaption {
+      margin-bottom: 15px;
+      text-align: center;
+      padding: 1%; }
+    main div.agent .agentBody {
+      margin: 2% 0; }
+      main div.agent .agentBody h2 {
+        font-size: 18px;
+        font-weight: bold; }
+  main div.bookingForm {
+    margin: 0 auto; }
+    main div.bookingForm .column {
+      width: 100%; }
+      main div.bookingForm .column .title {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 2% 0; }
+      main div.bookingForm .column input:invalid {
+        border: 1px solid red; }
+      main div.bookingForm .column bookingForm:invalid {
+        border: 1px solid red; }
+      main div.bookingForm .column input:valid {
+        background-color: #fff;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 1%;
+        border: 1px solid #ccc; }
+      main div.bookingForm .column input:required {
+        border-width: 1px;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 1%; }
+      main div.bookingForm .column .states {
+        padding: 5px;
+        height: 35px;
+        width: 100%;
+        font-size: 100%;
+        border: 1px solid #ccc; }
+      main div.bookingForm .column .cruises {
+        padding: 5px;
+        height: 35px;
+        width: 100%;
+        font-size: 100%;
+        border: 1px solid #ccc; }
+      main div.bookingForm .column .button {
+        background-color: #e9e9e9;
+        /* Green */
+        border-radius: 5px;
+        color: #484848;
+        padding: 8px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        margin-bottom: 5%;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s; }
+      main div.bookingForm .column .button2:hover {
+        background-color: #2196F3;
+        color: #fff;
+        border-radius: 5px; }
 
 /*end main*/
 /* FOOTER STYLING */
@@ -487,6 +564,21 @@ footer {
         grid-area: 1 / span 1; }
       main div.cruise div.cruiseList figure.cruiseDesc {
         grid-area: 1 / span 2; }
+        main div.cruise div.cruiseList figure.cruiseDesc button {
+          float: right;
+          width: 200px; }
+  main div.agent .agentImage {
+    width: 300px;
+    display: block;
+    float: right;
+    margin: 0 2% 3% 3%; }
+    main div.agent .agentImage img {
+      width: 300px;
+      float: right; }
+  main div.bookingForm {
+    margin: 0 2%; }
+    main div.bookingForm .column {
+      width: 350px; }
 
   .info {
     grid-template-columns: 1fr 1fr;

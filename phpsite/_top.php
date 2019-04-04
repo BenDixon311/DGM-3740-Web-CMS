@@ -52,16 +52,16 @@
 	 
 	<div class="navwrap">
     <ul class="topnav" id="myTopnav">
-       <li><a class="menuItem" onclick="toggleActive(this, event)" href="#">HOME</a></li>
-       <li><a class="menuItem" onclick="toggleActive(this, event)" href="#">CRUISES</a></li>
-       <li><a class="menuItem" onclick="toggleActive(this, event)" href="#">BOOK</a></li>
+       <li><a class="menuItem" onclick="toggleActive(this, event)" href="./index.php">HOME</a></li>
+       <li><a class="menuItem" onclick="toggleActive(this, event)" href="./cruises.php">CRUISES</a></li>
+       <li><a class="menuItem" onclick="toggleActive(this, event)" href="./book.php">BOOK</a></li>
        <div class="dropdown">
           <button class="dropbtn">AGENTS
              &nbsp;	&darr;
           </button>
           <div class="dropdown-content">
-             <li><a class="menuItem" onclick="toggleActive(this, event)" href="#">Julia Stevens</a></li>
-             <li><a class="menuItem" onclick="toggleActive(this, event)" href="#">Steve Jobs</a></li>
+             <li><a class="menuItem" onclick="toggleActive(this, event)" href="./agent1.php">Julia Stevens</a></li>
+             <li><a class="menuItem" onclick="toggleActive(this, event)" href="./agent2.php">Steve Jobs</a></li>
           </div>
        </div>
        <a href="javascript:void(0);" class="icon" onclick="myFunction()">

@@ -67,9 +67,40 @@
 
 				figure.cruiseDesc {
 					grid-area: 1 / span 2;
+					
+					
+					button {
+						float: right;
+						width: 200px;
+					}
 				}
 			}
 
+		}
+		
+		div.agent {
+			
+			
+			.agentImage {
+				width: 300px;
+				display: block;
+				float: right;
+				margin: 0 2% 3% 3%;
+				
+				img {
+					width: 300px;
+					float: right;
+				}
+			}
+		}
+		
+		div.bookingForm {
+			margin: 0 2%;
+			
+			.column {
+				width: 350px;
+				
+			}
 		}
 
 		
