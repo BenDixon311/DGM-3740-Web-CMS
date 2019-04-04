@@ -7,7 +7,7 @@ function toggleActive(sender, event) {
 	var menuItems = document.getElementsByTagName("a");
 	
 	for (var i = 0; i < menuItems.length; i++) {
-		if (menuItems[i].className.indexOf("menuItem active") !== -1)
+		if (menuItems[i].classList.contains("active") === 'false')
 			{
 				menuItems[i].classList.remove("active");
 				
