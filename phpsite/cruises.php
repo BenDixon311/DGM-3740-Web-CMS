@@ -35,6 +35,32 @@
 		
 		
 	</div>
+	
+			<div class = "cruiseList">
+
+		<img class= "cruiseImg" src = "images/cruiseship3.jpg">
+		<figure class = "cruiseDesc">
+			<h2>Asia Cruise for $9999!</h2>
+			<p class="cruiseInfo">Spend 14 days in all of Asia's most beautiful countries! Thailand, Vietnam, Taiwan, and more!
+			You'll love just how much you'll do. Swim with dolphins, climb ancient temples, and relax!</p>
+			<button type = "button" class = "readMore">READ MORE</button>
+		</figure>
+		
+		
+	</div>
+	
+			<div class = "cruiseList">
+
+		<img class= "cruiseImg" src = "images/cruiseship4.jpg">
+		<figure class = "cruiseDesc">
+			<h2>Yoohoo Cruise for $777</h2>
+			<p class="cruiseInfo">Get on the Yoohoo for your most adventurous journey yet! Swim in underwater caves, eat delicious food, and possibly even find your significant other.
+			You don't want to miss this!</p>
+			<button type = "button" class = "readMore">READ MORE</button>
+		</figure>
+		
+		
+	</div>
 
 	
 	

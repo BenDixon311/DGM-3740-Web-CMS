@@ -49,8 +49,9 @@
 	
 	
 	
+
 <script src="js/scripts.js"></script>
-	
+
 <script type="text/javascript">
 $(document).ready(function(){
   $('.slider').slick({
@@ -70,6 +71,9 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+	
+	
+
   </script>
 	
 

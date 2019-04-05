@@ -141,6 +141,7 @@ nav {
 
 /* MAIN CONTENT STYLING */
 main {
+  max-width: 1200px;
   margin: 0 auto; }
   main img {
     max-width: 100%;
@@ -631,9 +632,10 @@ footer {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 90%; }
+  font-size: 90%;
+  height: 49px; }
 
-.active {
+.topnav a.active {
   background-color: #137493;
   color: white !important; }
 
