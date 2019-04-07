@@ -59,8 +59,10 @@
           <i class="fa fa-bars"></i>
        </a>
       <div class="search">
-          <input type="search" name="search" id="search" placeholder="Search...">
-          <button class="mySearch"><i class="fas fa-search fa-2x"></i></button>
+		<form method = "get" action="">
+          <input type="search" name="s" id="search" placeholder="Search...">
+          <button class="mySearch" type="submit"><i class="fas fa-search fa-2x"></i></button>
+		</form>
        </div>
     </div>
  </div>

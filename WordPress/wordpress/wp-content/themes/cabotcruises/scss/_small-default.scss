@@ -287,7 +287,7 @@ main {
 		.feature1 {
 			grid-row: 1;
 			grid-column: 1 / span 2;
-			background-image: url("../images/cruiseship1.jpg");
+			background-image: url("/images/cruiseship1.jpg");
 			background-size: cover;
 			opacity: .75;
 			position: relative;
@@ -323,7 +323,7 @@ main {
 		.feature2 {
 			grid-row:1;
 			grid-column: 3 / span 2;
-			background-image: url("../images/cruiseship2.jpg");
+			background-image: url("/images/cruiseship2.jpg");
 			background-size: cover;
 			opacity: .75;
 			position: relative;
@@ -360,7 +360,7 @@ main {
 		.feature3 {
 			grid-row: 2;
 			grid-column: 1 / span 2;
-			background-image: url("../images/cruiseship3.jpg");
+			background-image: url("/images/cruiseship3.jpg");
 			background-size: cover;
 			opacity: .75;
 			position: relative;
@@ -395,7 +395,7 @@ main {
 		.feature4 {
 			grid-row: 2;
 			grid-column: 3 / span 2;
-			background-image: url("../images/cruiseship4.jpg");
+			background-image: url("/images/cruiseship4.jpg");
 			background-size: cover;
 			opacity: .75;
 			position: relative;
