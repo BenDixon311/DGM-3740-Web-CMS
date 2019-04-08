@@ -705,6 +705,48 @@ footer {
 }
 	
 
+.newspaper {
+	
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+	
+	-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  	-moz-column-gap: 40px; /* Firefox */
+  	column-gap: 40px;
+	
+	-webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+  	-moz-column-rule-style: solid; /* Firefox */
+  	column-rule-style: solid;
+	
+	h2 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	
+}
+
+div.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+	figure {
+		
+		margin: 5px;
+		padding: 10px;
+		
+		img {
+			width: 150px;
+			height: 150px;
+		}
+	
+}
+}
+
+
+
 
 
 .clearfix:after {

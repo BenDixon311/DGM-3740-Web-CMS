@@ -531,6 +531,34 @@ footer {
   .copyright a:hover {
     color: #A9A9A9; }
 
+.newspaper {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
+  -webkit-column-rule-style: solid;
+  /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid;
+  /* Firefox */
+  column-rule-style: solid; }
+  .newspaper h2 {
+    font-size: 18px;
+    font-weight: bold; }
+
+div.flex-container {
+  display: flex;
+  flex-wrap: wrap; }
+  div.flex-container figure {
+    margin: 5px;
+    padding: 10px; }
+    div.flex-container figure img {
+      width: 150px;
+      height: 150px; }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -593,7 +621,26 @@ footer {
     margin: 0 3% 6%; }
 
   .copyright {
-    padding: 1.5%; } }
+    padding: 1.5%; }
+
+  .newspaper {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; }
+
+  div.flex-container {
+    display: flex;
+    flex-wrap: wrap; }
+    div.flex-container figure {
+      margin: 5px;
+      padding: 10px; }
+      div.flex-container figure img {
+        width: 200px;
+        height: 200px; }
+
+  div.google-map iframe {
+    height: 450px;
+    width: 600px; } }
 /* CSS Document */
 @media only screen and (min-width: 1024px) {
   body h1 {
@@ -618,6 +665,19 @@ footer {
   main .feature4 {
     grid-row: 1;
     grid-column: 4; }
+  main .newspaper {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3; }
+  main div.flex-container {
+    display: flex;
+    flex-wrap: wrap; }
+    main div.flex-container figure {
+      margin: 5px;
+      padding: 10px; }
+      main div.flex-container figure img {
+        width: 250px;
+        height: 250px; }
 
   .info {
     grid-template-columns: 1fr 1fr 1fr;
@@ -626,6 +686,9 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 2%; } }
+#primaryNav li.menu-item:hover {
+  background-color: #D46D6F; }
+
 #primaryNav li.current-menu-item a {
   background-color: #137493; }
 

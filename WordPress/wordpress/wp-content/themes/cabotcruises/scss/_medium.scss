@@ -120,8 +120,36 @@
 		padding:1.5%;
 	}	
 	
-
-
+	.newspaper {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+	
+	div.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+	figure {
+		
+		margin: 5px;
+		padding: 10px;
+		
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	
+}
+}
+	
+	div.google-map {
+		iframe {
+			height: 450px;
+			width: 600px;
+		}
+	}
 	
 } //end main
 	

@@ -42,7 +42,7 @@
 				</div>
 		</div>
 		<div class="copyright">
-						&#169; 2019 Ben Dixon 
+						&#169; 2019 Cabot Cruises - <a href="http://dgm3740.bendixondev.com/WordPress/wordpress/wp-admin">Administration</a> 
 		</div>
 </footer>
 	
