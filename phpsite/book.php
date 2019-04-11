@@ -10,13 +10,13 @@
         <h1 class="title">Book a Cruise</h1>
         <label for="fullname">Full Name</label><br>
         <input type="text" id="fullname" name="fullname" required
-       placeholder="Enter Full Name..." maxlength="200" size="200"><br>
+       placeholder="Enter Full Name..." maxlength="200" size="200"><br><br>
        <label for="address">Address:</label><br>
         <input type="text" id="address" name="address"
-       placeholder="Enter Address..." maxlength="200" size="200"><br>
+       placeholder="Enter Address..." maxlength="200" size="200"><br><br>
        <label for="city">City</label><br>
         <input type="text" id="city" name="city"
-       placeholder="Enter City..." maxlength="200" size="200"><br>
+       placeholder="Enter City..." maxlength="200" size="200"><br><br>
        <label for="state">State</label><br>
        <form action="" method="get">
         <select name="state" class="states">
@@ -75,13 +75,13 @@
         </form><br>
        <label for="zipcode">Zipcode</label><br>
         <input type="text" id="zipcode" name="zipcode"
-       placeholder="Enter Zipcode..." maxlength="9" size="200"><br>
+       placeholder="Enter Zipcode..." maxlength="9" size="200"><br><br>
        <label for="phonenumber">Phone Number</label><br>
         <input type="tel" id="phonenumber" name="phonenumber"
-       placeholder="Enter Phone Number..." maxlength="18" size="200"><br>
+       placeholder="Enter Phone Number..." maxlength="18" size="200"><br><br>
        <label for="emailaddress">Email Address</label><br>
         <input type="email" id="emailaddress" name="emailaddress" required
-       placeholder="Enter valid email address..." maxlength="200" size="200"><br>
+       placeholder="Enter valid email address..." maxlength="200" size="200"><br><br>
        <label for="state">Cruises</label><br>
        <form action="" method="get">
         <select name="cruises" class="cruises">

@@ -81,7 +81,18 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     text-align: right;
-    font-size: 24px; }
+    font-size: 18px;
+    font-family: "Avira", sans-serif;
+    padding-bottom: 15px; }
+    header .header-right a {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: black;
+      font-style: normal;
+      margin-top: 20px;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none; }
   header .wrapper {
     position: absolute;
     margin-left: 63px;
@@ -143,6 +154,8 @@ nav {
 main {
   max-width: 1200px;
   margin: 0 auto; }
+  main .wrap {
+    margin: 0 auto; }
   main h1 {
     font-family: "Avira", sans-serif;
     font-size: 32px;
@@ -163,7 +176,8 @@ main {
       font-family: "Avira", sans-serif;
       font-size: 32px;
       color: #0480b1;
-      margin-top: 2em; }
+      margin-top: 2em;
+      margin-left: 2%; }
   main div.strip {
     max-width: 100%;
     background-color: black;
@@ -559,6 +573,15 @@ div.flex-container {
       width: 150px;
       height: 150px; }
 
+div.servicearea img {
+  width: 100%;
+  min-height: 600px; }
+div.servicearea figcaption {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Avira", sans-serif;
+  padding: 10px; }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -758,7 +781,7 @@ input {
 
 #search {
   border: 1px solid #ccc;
-  padding: 11px 9px 6px 9px;
+  padding: 15px 9px 6px 9px;
   width: 150px;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -769,7 +792,6 @@ input {
 
 .mySearch {
   padding: 3px 5px 5px 3px;
-  margin-left: -5px;
   background-color: #C8C8C8;
   color: #484848; }
 
@@ -788,11 +810,9 @@ textarea, select, input, button {
     padding: 9px; }
 
   .search {
-    margin-bottom: 8px;
-    margin-right: 10%; }
+    margin-bottom: 8px; }
 
   #search {
-    padding: 10px 0px 7px 9px;
     border: 1px solid #ccc;
     border-radius: unset;
     width: 13rem;

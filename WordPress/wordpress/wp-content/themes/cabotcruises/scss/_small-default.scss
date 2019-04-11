@@ -33,7 +33,22 @@ header {
 		max-width: $maxWidth;
 		margin: 0 auto;
 		text-align:right;
-		font-size: 24px;
+		font-size: 18px;
+		font-family: $mainFont;
+		padding-bottom: 15px;
+		
+		a{
+			  border: 1px solid #ccc;
+			  border-radius: 5px;
+			  color: black;
+			  font-style: normal;
+			  margin-top: 20px;
+			  padding: 5px 10px;
+			  text-align:center;
+			  text-decoration: none;
+			
+		}
+		
 		
 	}
 	
@@ -137,6 +152,9 @@ main {
 	max-width: 1200px;
 	margin: 0 auto;
 	
+	.wrap {
+		margin: 0 auto;
+	}
 	
 	h1 {
 		font-family: $mainFont;
@@ -169,7 +187,7 @@ main {
 			font-size: 32px;
 			color: $font;
 			margin-top: 2em;
-			;
+			margin-left: $gutter;
 			
 			
 		}
@@ -740,9 +758,25 @@ div.flex-container {
 		img {
 			width: 150px;
 			height: 150px;
+			
 		}
 	
 }
+}
+
+div.servicearea {
+	img {
+		width: 100%;
+		min-height: 600px;
+	}
+	
+	figcaption {
+		text-align: center;
+		font-size: 24px;
+		font-family: $mainFont;
+		padding: 10px;
+		
+	}
 }
 
 
