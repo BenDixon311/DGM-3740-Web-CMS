@@ -152,6 +152,119 @@ main {
 	max-width: 1200px;
 	margin: 0 auto;
 	
+	/* CONTACT FORM 7 STYLING */
+	.wpcf7 {
+		background-color: #DBDBDB;
+		border: 5px solid #c62957;
+		
+		p{
+			padding-bottom: 10px;
+		}
+		
+		.screen-reader-response {
+			display: hidden;
+		}
+	}
+	
+	.wpcf7-form {
+		margin: 25px;
+	}
+	
+	.wpcf7-textarea {
+		width: 50%;
+	}
+	
+	.wpcf7 input {
+		width: 50%;
+	}
+	
+	
+	/* NEWS STYLING */
+	
+	.news-content {
+		padding: 15px; 
+		margin: 5px;
+		border: 2px thin #c62957;
+	}
+	
+	.grid-date-post {
+		font-size: 12px;
+		font-style: italic;
+		padding-bottom: 8px;
+	}
+	
+	.post-content-text {
+		
+		h3{
+			padding-bottom: 8px;
+			a {
+				text-decoration: none;
+				font-size: 24px;
+				color: black;
+				font-style: bold;
+				
+			}
+			
+			
+			
+		}
+		
+		.news-content-excerpt {
+			
+			padding-bottom: 30px;
+			
+			a {
+				float: right;
+				text-decoration: none;
+				color: #fff !important;
+				text-transform: uppercase;
+				background: #c62957;
+				padding: 10px;
+				border-radius: 5px;
+				display: inline-block;
+				border: none;
+			}
+			
+			a:hover {
+				background: #434343;
+				letter-spacing: 1px;
+				-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+				-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+				box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+				transition: all 0.4s ease 0s;
+			}
+		}
+	}
+	
+	.news_pagination {
+		text-align: center;
+		padding: 10px 0;
+	}
+	
+	.page-numbers {
+		text-decoration: none;
+	}
+	
+	.next {
+		    font-size: 16px;
+			background: #c62957;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #fff;
+			padding: 7px;
+			border-radius: 5px;
+	}
+	
+	.prev {
+		  	font-size: 16px;
+			background: #c62957;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #fff;
+			padding: 7px;
+			border-radius: 5px;
+	}
+	
 	.wrap {
 		margin: 0 auto;
 	}

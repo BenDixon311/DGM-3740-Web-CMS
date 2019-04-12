@@ -153,7 +153,77 @@ nav {
 /* MAIN CONTENT STYLING */
 main {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* CONTACT FORM 7 STYLING */
+  /* NEWS STYLING */ }
+  main .wpcf7 {
+    background-color: #DBDBDB;
+    border: 5px solid #c62957; }
+    main .wpcf7 p {
+      padding-bottom: 10px; }
+    main .wpcf7 .screen-reader-response {
+      display: hidden; }
+  main .wpcf7-form {
+    margin: 25px; }
+  main .wpcf7-textarea {
+    width: 50%; }
+  main .wpcf7 input {
+    width: 50%; }
+  main .news-content {
+    padding: 15px;
+    margin: 5px;
+    border: 2px thin #c62957; }
+  main .grid-date-post {
+    font-size: 12px;
+    font-style: italic;
+    padding-bottom: 8px; }
+  main .post-content-text h3 {
+    padding-bottom: 8px; }
+    main .post-content-text h3 a {
+      text-decoration: none;
+      font-size: 24px;
+      color: black;
+      font-style: bold; }
+  main .post-content-text .news-content-excerpt {
+    padding-bottom: 30px; }
+    main .post-content-text .news-content-excerpt a {
+      float: right;
+      text-decoration: none;
+      color: #fff !important;
+      text-transform: uppercase;
+      background: #c62957;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none; }
+    main .post-content-text .news-content-excerpt a:hover {
+      background: #434343;
+      letter-spacing: 1px;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+      transition: all 0.4s ease 0s; }
+  main .news_pagination {
+    text-align: center;
+    padding: 10px 0; }
+  main .page-numbers {
+    text-decoration: none; }
+  main .next {
+    font-size: 16px;
+    background: #c62957;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px; }
+  main .prev {
+    font-size: 16px;
+    background: #c62957;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px; }
   main .wrap {
     margin: 0 auto; }
   main h1 {
