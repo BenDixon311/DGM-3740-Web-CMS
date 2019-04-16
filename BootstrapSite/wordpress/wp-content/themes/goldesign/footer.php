@@ -2,10 +2,9 @@
 </main>
 
 <footer class="container">
-  <p>&copy; Company 2017-2019</p>
+  <p>&copy; Goldesign 2019</p>
 </footer>
     <!-- Optional JavaScript -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <script>
     baguetteBox.run('.tz-gallery');

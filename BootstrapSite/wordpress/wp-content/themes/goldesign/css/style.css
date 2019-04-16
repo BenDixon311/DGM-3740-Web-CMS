@@ -1,9 +1,8 @@
 /* CSS Document */
 
 body {
-	background-color: black;
+	background-color: #232020;
 }
-
 /* Gallery Grid Hover Effect */
 
 .container.gallery-container {
@@ -35,7 +34,7 @@ body {
 
 .tz-gallery .lightbox img {
     width: 100%;
-	
+    
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
@@ -69,7 +68,6 @@ body {
 
 .card {
   margin: 0 auto;
-  
 }
 .card .carousel-item {
   height: 200px;
@@ -104,20 +102,10 @@ a > .ico {
 a:hover > .ico {
     background-color: #666;
 }
-.item blockquote {
-    border-left: none;
-    margin: 0;
-}
-.item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
-}
 
 .jumbotron {
 	
-	background-image:url(../images/background.jpeg);
+	background-image:url(/images/background.jpeg);
 	background-size: cover;
 	background-position:center;
 	
